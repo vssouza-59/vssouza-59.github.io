@@ -1,130 +1,132 @@
+/* Reset */
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-}
-
-:root{
+  }
+  
+  /* Variables */
+  :root {
     --main-color: #54B689;
-    --main-text-color: #fff;
-    --bio-bg-color: #999;
+    --main-text-color: #FFF;
+    --border-color: #999;
+    --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
-}
-
-/* general */
-
-.highlight{
-    color: var(--main-color)
-}
-
-#container{
+  }
+  
+  /* General */
+  .highlight {
+    color: var(--main-color);
+  }
+  
+  /* Containers */
+  #container {
     display: flex;
     flex-direction: row;
     color: var(--main-text-color);
-}
-
-#bio-container{
+  }
+  
+  #bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
-    background-color: var(--bio-border-color);
+    background-color: var(--bio-bg-color);
     text-align: center;
     padding: 30px 12px;
     border-right: 5px solid var(--bio-border-color);
-}
-
-#about-container{
+  }
+  
+  #about-container {
     flex: 1 1 80%;
     min-height: 100vh;
     background-color: var(--about-bg-color);
     padding: 50px;
-}
-
-
-/* bio container*/
-
-#bio-container h2{
+  }
+  
+  /* Bio container */
+  #bio-container h2 {
     margin-bottom: 25px;
-}
-
-#bio-container p{
+  }
+  
+  #bio-container p {
     margin-bottom: 20px;
-}
-
-#bio-container #welcome-text{
+  }
+  
+  #bio-container #welcome-text {
     font-weight: bold;
-}
-
-#bio-img {
+  }
+  
+  #bio-image {
     width: 175px;
     height: 175px;
     border-radius: 50%;
     margin-bottom: 25px;
-}
-
-#social-container{
+  }
+  
+  #social-container {
     display: flex;
     justify-content: center;
     list-style: none;
-    border-bottom: 1px solid var(--bio-border-color);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
-    border-bottom: 25px;
-}
-
-#social-contianer li{
+    padding-bottom: 25px;
+  }
+  
+  #social-container li {
     flex: 1 1 0;
     max-width: 60px;
-}
-
-#social-container li a {
+  }
+  
+  #social-container li a {
     color: var(--main-color);
     font-size: 30px;
-}
-
-#email-container{
+  }
+  
+  #email-container {
     display: flex;
     justify-content: center;
-}
-
-#email-container ion-icon,
-#email-container a{
-    flex:  1 1 0;
-}
-
-#email-contianer{
+  }
+  
+  #email-container ion-icon,
+  #email-container a {
+    flex: 1 1 0;
+  }
+  
+  #email-container a {
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 225px;
-}
- 
-#email-container{
+  }
+  
+  #email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
-}
-
-/*about-container*/
-
-#name{
+    max-width: 20px;
+  }
+  
+  /* about container */
+  #name {
     font-size: 42px;
     margin-bottom: 15px;
-}
-
-#tittle{
+  }
+  
+  #title {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
-}
-
-.description{
+  }
+  
+  .description {
     max-width: 75%;
     margin-bottom: 10px;
-}
-
-#btn-projects {
+  }
+  
+  #btn-projects {
     font-weight: bold;
-    font-size: var(--main-text-color);
+    font-size: 16px;
+    color: var(--main-text-color);
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 5px;
@@ -135,36 +137,36 @@
     width: 150px;
     text-align: center;
     display: flex;
-}
-
-#btn-projects ion-icon,
-#btn-projects span{
+  }
+  
+  #btn-projects ion-icon,
+  #btn-projects span {
     flex: 1 1 0;
-}
-
-#btn-projects ion-icon{
+  }
+  
+  #btn-projects ion-icon {
     font-size: 20px;
     max-width: 20px;
-}
-
-#btn-projects:hover{
+  }
+  
+  #btn-projects:hover {
     background-color: transparent;
-}
-
-#skills-section-tittle{
-    border-top: 1px solid var(--bio-border-color);
+  }
+  
+  #skills-section-title {
+    border-top: 1px solid var(--border-color);
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 32px;
-}
-
-#skills-container{
+  }
+  
+  #skills-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-}
-
-.skills-box {
+  }
+  
+  .skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
@@ -231,4 +233,4 @@
       font-size: 60px;
     }
   
-}
+  }
